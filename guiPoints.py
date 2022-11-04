@@ -40,7 +40,8 @@ def calculate(e=None):
         for point in values:
             fi = np.append(fi, point[1])
 
-        main(xi, fi)
+        main(xi, fi, len(points))
+        plt.show()
         # sys.stdout = open("resultados.txt", "w")
 
         # print("*****************")
@@ -85,7 +86,7 @@ def createPointsFrame(numberOfPoints):
         y.grid(row=i+6, column=3, padx=5, pady=5)
 
         points.append((x, y))
-
+    
     root.bind("<Return>", calculate)
 
     Button(pointsFrame, text="Calcular", font=(
