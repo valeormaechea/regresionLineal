@@ -13,23 +13,23 @@ mainFrame.config(width=500, height=500)
 
 # -----------------------------
 
-Label(mainFrame, text="Metodos númericos", font=("Comic Sans MS", 25)).grid(
+Label(mainFrame, text="Metodos númericos", font=("Helvetica", 25)).grid(
     row=2, column=0, padx=0, pady=5)
 
 # -----------------------------
 
 
-numberOfPointsEntry = Entry(mainFrame, font=("Comic Sans MS", 15))
+numberOfPointsEntry = Entry(mainFrame, font=("Helvetica", 15))
 numberOfPointsEntry.grid(row=5, column=1, padx=5, pady=5)
 numberOfPointsEntry.focus_set()
 
 Label(mainFrame, text="Cantidad de puntos:", font=(
-    "Comic Sans MS", 15)).grid(row=5, column=0, padx=0, pady=5)
+    "Helvetica", 15)).grid(row=5, column=0, padx=0, pady=5)
 
 # -----------------------------
 
 errorLabel = Label(mainFrame, text="Error! Revise los campos", bg="yellow", font=(
-    "Comic Sans MS", 15))
+    "Helvetica", 15))
 
 
 def getPoints(e=None):
@@ -46,7 +46,7 @@ def getPoints(e=None):
 
 
 Button(mainFrame, text="Calcular", font=(
-    "Comic Sans MS", 15), bg="LightSkyBlue1", command=getPoints).grid(row=8, column=0, columnspan=2, padx=5, pady=5)
+    "Helvetica", 15), bg="LightSkyBlue1", command=getPoints).grid(row=8, column=0, columnspan=2, padx=5, pady=5)
 
 root.bind("<Return>", getPoints)
 
